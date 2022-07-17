@@ -1,4 +1,4 @@
-import { AbstractBatchOperation, AbstractBatchOptions, AbstractDatabaseOptions, AbstractDelOptions, AbstractGetManyOptions, AbstractGetOptions, AbstractIterator, AbstractIteratorOptions, AbstractKeyIterator, AbstractKeyIteratorOptions, AbstractLevel, AbstractOpenOptions, AbstractPutOptions, AbstractSeekOptions, NodeCallback } from 'abstract-level';
+import { AbstractBatchOperation, AbstractBatchOptions, AbstractClearOptions, AbstractDatabaseOptions, AbstractDelOptions, AbstractGetManyOptions, AbstractGetOptions, AbstractIterator, AbstractIteratorOptions, AbstractKeyIterator, AbstractKeyIteratorOptions, AbstractLevel, AbstractOpenOptions, AbstractPutOptions, AbstractSeekOptions, NodeCallback } from 'abstract-level';
 import type { IManifest } from 'level-supports';
 import { LevelDB, LevelDBIterator, } from '@switt/react-native-leveldb';
 import ModuleError from 'module-error';
@@ -62,8 +62,6 @@ export class SKReactNativeLevelIterator extends AbstractIterator<SKReactNativeLe
 
   startedReading = false;
 
-
-
   constructor(db: any, options: AbstractIteratorOptions<StOrArr, StOrArr>) {
     super(db, options);
     const level = this.db._db!;
@@ -83,11 +81,16 @@ export class SKReactNativeLevelIterator extends AbstractIterator<SKReactNativeLe
     let upperBound: StOrArr | undefined;
     let lowerBoundIsOpen = true;
     let upperBoundIsOpen = true;
+
+    // Counter-intuitively, you don't need to check if gt >= gte, or lt <= lte
+    // Because according to the test suite... there's a priority!
+    // gte has higher priority than gt, and lte has higher priority than lt!
+    // so we just check them later that's all
     if (options.gt != undefined) {
       lowerBound = options.gt;
       lowerBoundIsOpen = false;
     }
-    else if (options.gte != undefined) {
+    if (options.gte != undefined) {
       lowerBound = options.gte;
       lowerBoundIsOpen = true;
     }
@@ -95,12 +98,13 @@ export class SKReactNativeLevelIterator extends AbstractIterator<SKReactNativeLe
       upperBound = options.lt;
       upperBoundIsOpen = false;
     }
-    else if (options.lte != undefined) {
+    if (options.lte != undefined) {
       upperBound = options.lte;
       upperBoundIsOpen = true;
     }
+    // }
     const startingBound = options.reverse ? upperBound : lowerBound;
-    if (startingBound) {
+    if (startingBound != undefined) {
       this.startingBoundIsOpen = this.isReversed ? upperBoundIsOpen : lowerBoundIsOpen;
       this.it.seek(startingBound);
       this.startingBound = startingBound;
@@ -126,7 +130,7 @@ export class SKReactNativeLevelIterator extends AbstractIterator<SKReactNativeLe
     }
 
     const endingBound = options.reverse ? lowerBound : upperBound;
-    if (endingBound) {
+    if (endingBound != undefined) {
       this.endingBoundIsOpen = this.isReversed ? lowerBoundIsOpen : upperBoundIsOpen;
       this.endingBound = endingBound;
       // self.endingSliceStorage = ...
@@ -148,8 +152,7 @@ export class SKReactNativeLevelIterator extends AbstractIterator<SKReactNativeLe
   }
   // An empty array signifies the natural end of the iterator
   // so simply yielding a non-empty array signifies non-end
-  _next(callback: NextCallback<StOrArr, StOrArr>): void {
-    console.log('next called');
+  protected _next(callback: NextCallback<StOrArr, StOrArr>): void {
     if (this.busy) {
       callback(new ModuleError('Iterator is busy', { code: 'LEVEL_ITERATOR_BUSY' }));
       return;
@@ -202,7 +205,7 @@ export class SKReactNativeLevelIterator extends AbstractIterator<SKReactNativeLe
       this.db.nextTick(callback, e);
     }
   }
-  _nextv(size: number, options: {}, callback: NodeCallback<[[StOrArr, StOrArr]]>): void {
+  protected _nextvnot(size: number, options: {}, callback: NodeCallback<[[StOrArr, StOrArr]]>): void {
     console.log('nextv called');
     if (this.busy) {
       callback(new ModuleError('Iterator is busy', { code: 'LEVEL_ITERATOR_BUSY' }));
@@ -219,6 +222,22 @@ export class SKReactNativeLevelIterator extends AbstractIterator<SKReactNativeLe
     const nextFn = this.options.reverse ? () => it.prev() : () => it.next();
     try {
       const outVal: [StOrArr, StOrArr][] = [];
+      if (!this.startedReading) {
+        // not started yet; don't advance yet
+        this.startedReading = true;
+      }
+      else {
+        if (this.isEnded()) {
+          // early stop if ended already
+          this.busy = false;
+          this.db.nextTick(callback, null, outVal);
+          return;
+        }
+        else {
+          // advance one time.
+          nextFn();
+        }
+      }
       for (let i = 0; i < size && !this.isEnded(); i++, nextFn()) {
         let key: StOrArr = this.keyIsBuf ? it.keyBuf() : it.keyStr();
         let value: StOrArr = this.valueIsBuf ? it.valueBuf() : it.valueStr();
@@ -231,7 +250,7 @@ export class SKReactNativeLevelIterator extends AbstractIterator<SKReactNativeLe
       this.db.nextTick(callback, e);
     }
   }
-  _seek(target: StOrArr, options: AbstractSeekOptions<StOrArr>): void {
+  protected _seek(target: StOrArr, options: AbstractSeekOptions<StOrArr>): void {
     if (!this.valid) {
       return;
     }
@@ -255,7 +274,7 @@ export class SKReactNativeLevelIterator extends AbstractIterator<SKReactNativeLe
     }
     this.startedReading = false;
   }
-  _close(callback: NodeCallback<void>): void {
+  protected _close(callback: NodeCallback<void>): void {
     this.valid = false;
     this.it.close();
     this.db._openIterators.delete(this);
@@ -263,7 +282,7 @@ export class SKReactNativeLevelIterator extends AbstractIterator<SKReactNativeLe
   }
   // ..
 
-  isEnded(): boolean {
+  protected isEnded(): boolean {
     // following https://github.com/andymatuschak/react-native-leveldown/blob/e7d14cfdf81558d15ecec76e956269081d12a40b/ios/RNLeveldown.mm#L162
     if (!this.it.valid()) {
       return true;
@@ -271,13 +290,13 @@ export class SKReactNativeLevelIterator extends AbstractIterator<SKReactNativeLe
     if (this.hasLimit && this.stepCount >= this.limit) {
       return true;
     }
-    if (this.endingBound) {
+    if (this.endingBound != undefined) {
       const comparison = this.it.compareKey(this.endingBound)
       if ((comparison < 0 && this.isReversed) || (comparison > 0 && !this.isReversed) || (comparison == 0 && !this.endingBoundIsOpen)) {
         return true;
       }
     }
-    if (this.startingBound) {
+    if (this.startingBound != undefined) {
       const comparison = this.it.compareKey(this.startingBound);
       if ((comparison > 0 && this.isReversed) || (comparison < 0 && !this.isReversed) || (comparison == 0 && !this.startingBoundIsOpen)) {
         return true;
@@ -314,11 +333,11 @@ export class SKReactNativeLevel extends AbstractLevel<string, string, string> {
       createIfMissing: true,
       errorIfExists: true,
       permanence: true,
-      snapshots: false
+      snapshots: false,
     }, options);
     this.location = location;
   }
-  _open(options: AbstractOpenOptions, callback: NodeCallback<void>): void {
+  protected _open(options: AbstractOpenOptions, callback: NodeCallback<void>): void {
     console.log('called with options', options);
     const {
       createIfMissing = true, errorIfExists = false
@@ -345,7 +364,7 @@ export class SKReactNativeLevel extends AbstractLevel<string, string, string> {
       }
     }
   }
-  _close(callback: NodeCallback<void>): void {
+  protected _close(callback: NodeCallback<void>): void {
     try {
       if (this._openIterators.size) {
         for (const it of this._openIterators) {
@@ -361,7 +380,7 @@ export class SKReactNativeLevel extends AbstractLevel<string, string, string> {
       this.nextTick(callback, e);
     }
   }
-  _get(
+  protected _get(
     key: StOrArr,
     options: AbstractGetOptions<StOrArr, StOrArr>,
     callback: NodeCallback<StOrArr>
@@ -390,7 +409,7 @@ export class SKReactNativeLevel extends AbstractLevel<string, string, string> {
     }
   }
 
-  _getMany(
+  protected _getMany(
     keys: (StOrArr)[],
     options: AbstractGetManyOptions<string, StOrArr>,
     callback: NodeCallback<(StOrArr)[]>
@@ -421,7 +440,7 @@ export class SKReactNativeLevel extends AbstractLevel<string, string, string> {
     }
   }
 
-  _put(
+  protected _put(
     key: StOrArr,
     value: StOrArr,
     options: AbstractPutOptions<StOrArr, StOrArr>,
@@ -434,7 +453,7 @@ export class SKReactNativeLevel extends AbstractLevel<string, string, string> {
       this.nextTick(callback, e);
     }
   }
-  _del(
+  protected _del(
     key: StOrArr,
     options: AbstractDelOptions<StOrArr>,
     callback: NodeCallback<void>
@@ -446,7 +465,7 @@ export class SKReactNativeLevel extends AbstractLevel<string, string, string> {
       this.nextTick(callback, e);
     }
   }
-  _batch(
+  protected _batch(
     operations: Array<AbstractBatchOperation<any, StOrArr, StOrArr>>,
     options: AbstractBatchOptions<StOrArr, StOrArr>,
     callback: NodeCallback<void>
@@ -472,10 +491,33 @@ export class SKReactNativeLevel extends AbstractLevel<string, string, string> {
     }
   }
 
-  _iterator(options: AbstractIteratorOptions<StOrArr, StOrArr>) {
+  protected _iterator(options: AbstractIteratorOptions<StOrArr, StOrArr>) {
     const it = new SKReactNativeLevelIterator(this, options);
     this._openIterators.add(it);
     return it;
+  }
+
+  // Hopefully can do this better later with native implementaion?
+  protected async _clear(options: AbstractClearOptions<StOrArr>, callback: NodeCallback<void>) {
+    // Since the native code has no clear() we just use our own iterator to get stuff then..
+    const it = this.iterator({ ...options, values: false }); //new SKReactNativeLevelIterator(this, { ...options, values: false });
+    try {
+      const keys: StOrArr[] = [];
+      while (true) {
+        const kv = await it.next();
+        if (!kv) {
+          break;
+        }
+        keys.push(kv[0]);
+      }
+      for (const k of keys) {
+        this._db!.delete(k);
+      }
+      this.nextTick(callback, null);
+    } catch (e) {
+      this.nextTick(callback, e);
+    }
+    it.close();
   }
 }
 
