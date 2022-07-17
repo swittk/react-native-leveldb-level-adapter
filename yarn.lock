@@ -1623,6 +1623,11 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
+"@switt/react-native-leveldb@3.0.6-alpha1":
+  version "3.0.6-alpha1"
+  resolved "https://registry.yarnpkg.com/@switt/react-native-leveldb/-/react-native-leveldb-3.0.6-alpha1.tgz#19b5be63562854ef7364230a4b9424874839c078"
+  integrity sha512-vgq3MtIXclXQe9X3VALqDmprlpoocwOw4R+R+4l7DXfi5dXux6yLtpsSdGzopWnqA52yWR+rQnZNC1MX/oDJDw==
+
 "@szmarczak/http-timer@^1.1.2":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@szmarczak/http-timer/-/http-timer-1.1.2.tgz#b1665e2c461a2cd92f4c1bbf50d5454de0d4b421"
@@ -6283,11 +6288,6 @@ react-native-gradle-plugin@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/react-native-gradle-plugin/-/react-native-gradle-plugin-0.0.6.tgz#b61a9234ad2f61430937911003cddd7e15c72b45"
   integrity sha512-eIlgtsmDp1jLC24dRn43hB3kEcZVqx6DUQbR0N1ABXGnMEafm9I3V3dUUeD1vh+Dy5WqijSoEwLNUPLgu5zDMg==
-
-react-native-leveldb@^3.0.6:
-  version "3.0.6"
-  resolved "https://registry.yarnpkg.com/react-native-leveldb/-/react-native-leveldb-3.0.6.tgz#ea30ce75abcc65f1c06b161405fff24e66722262"
-  integrity sha512-gA+7awtJZxs4wVFBcEFirz3DK/0KIo+wWjR1cCeWc46VcEek5gf/4jB4LWjv7xjpuXjk4xijPu+StHThIgNh8A==
 
 react-native@0.68.2:
   version "0.68.2"

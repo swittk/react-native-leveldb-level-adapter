@@ -9,10 +9,11 @@
     "start": "react-native start"
   },
   "dependencies": {
+    "@switt/react-native-leveldb": "3.0.6-alpha1",
     "fast-text-encoding": "^1.0.4",
     "react": "17.0.2",
     "react-native": "0.68.2",
-    "react-native-leveldb": "^3.0.6",
+    "react-native-fs": "^2.20.0",
     "streams": "^0.0.9"
   },
   "devDependencies": {
