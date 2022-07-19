@@ -115,19 +115,6 @@ export class SKReactNativeLevelIterator extends AbstractIterator<SKReactNativeLe
       // self.endingSliceStorage = NULL
     }
   }
-  async *[Symbol.asyncIterator]() {
-    console.log('abstractit called');
-    try {
-      let item
-
-      while ((item = (await this.next())) !== undefined) {
-        yield item
-      }
-    } finally {
-      if (!this.valid) await this.close()
-    }
-  }
-
   // [Symbol.asyncIterator]() {
   //   return {
   //     next: async () => {
@@ -164,12 +151,11 @@ export class SKReactNativeLevelIterator extends AbstractIterator<SKReactNativeLe
   //     }
   //   };
   // }
-  // async *[Symbol.iterator]() {
-  //   console.log('symbolasynciterator called');
-  //   const ret = await this.next();
-  //   if (ret != undefined) yield ret;
-  //   return;
-  // }
+  async *[Symbol.iterator]() {
+    const ret = await this.next();
+    if (ret != undefined) yield ret;
+    return;
+  }
 
   current(): [StOrArr | undefined, StOrArr | undefined] | undefined {
     if (this.isEnded()) {
@@ -334,6 +320,59 @@ export class SKReactNativeLevelIterator extends AbstractIterator<SKReactNativeLe
     }
     return false;
   }
+  // [Symbol.asyncIterator]() {
+  //   console.log('my asyncgen');
+  //   const b: AsyncGenerator<[StOrArr, StOrArr], void, unknown> = {
+  //     next: async () => {
+  //       const nextRes = await this.next();
+  //       const res: IteratorResult<[StOrArr, StOrArr], void> = (nextRes != undefined) ? { done: false, value: nextRes! } : { done: true, value: undefined };
+  //       return res;
+  //     },
+  //     return: async () => {
+  //       const currentRes = this.current() as [StOrArr, StOrArr];
+  //       const ret: IteratorResult<[StOrArr, StOrArr], void> = (currentRes != undefined) ? { done: false, value: currentRes! } : { done: true, value: undefined };
+  //       return ret;
+  //     },
+  //     throw: async (e) => {
+  //       const currentRes = this.current() as [StOrArr, StOrArr];
+  //       this.close();
+  //       const ret: IteratorResult<[StOrArr, StOrArr], void> = (currentRes != undefined) ? { done: false, value: currentRes! } : { done: true, value: undefined };
+  //       return ret;
+  //     },
+  //     [Symbol.asyncIterator]: this[Symbol.asyncIterator],
+  //   };
+  //   return b;
+  // }
+  // async *[Symbol.iterator]() {
+  //   try {
+  //     let item
+  //     while ((item = (await this.next())) !== undefined) {
+  //       yield item;
+  //     }
+  //   } finally {
+  //     if (!this.isEnded()) await this.close();
+  //   }
+  //   // const b: AsyncGenerator<[StOrArr, StOrArr], void, unknown> = {
+  //   //   next: async () => {
+  //   //     const nextRes = await this.next();
+  //   //     const res: IteratorResult<[StOrArr, StOrArr], void> = (nextRes != undefined) ? { done: false, value: nextRes! } : { done: true, value: undefined };
+  //   //     return res;
+  //   //   },
+  //   //   return: async () => {
+  //   //     const currentRes = this.current() as [StOrArr, StOrArr];
+  //   //     const ret: IteratorResult<[StOrArr, StOrArr], void> = (currentRes != undefined) ? { done: false, value: currentRes! } : { done: true, value: undefined };
+  //   //     return ret;
+  //   //   },
+  //   //   throw: async (e) => {
+  //   //     const currentRes = this.current() as [StOrArr, StOrArr];
+  //   //     this.close();
+  //   //     const ret: IteratorResult<[StOrArr, StOrArr], void> = (currentRes != undefined) ? { done: false, value: currentRes! } : { done: true, value: undefined };
+  //   //     return ret;
+  //   //   },
+  //   //   [Symbol.asyncIterator]: this[Symbol.asyncIterator]
+  //   // };
+  //   // return b;
+  // }
 }
 
 
