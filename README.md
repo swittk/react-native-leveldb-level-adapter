@@ -3,15 +3,8 @@
 leveldown adapter for react-native-leveldb
 
 main issues in test
-- "should be deeply equivalent"
-- Iterator is not valid
-- Should be strictly equal
-- plan != count
-- correct number of entries
-- no next() error
 - TypeError: Invalid attempt to iterate non-iterable instance. In order to be iterable, non-array objects must have a [Symbol.iterator]() method
-- sorts lexicographically
-
+    - If anyone can help with this I'd be very grateful..
 ## Installation
 
 ```sh

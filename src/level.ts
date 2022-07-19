@@ -1,33 +1,9 @@
 import { AbstractBatchOperation, AbstractBatchOptions, AbstractClearOptions, AbstractDatabaseOptions, AbstractDelOptions, AbstractGetManyOptions, AbstractGetOptions, AbstractIterator, AbstractIteratorOptions, AbstractKeyIterator, AbstractKeyIteratorOptions, AbstractLevel, AbstractOpenOptions, AbstractPutOptions, AbstractSeekOptions, NodeCallback } from 'abstract-level';
-import type { IManifest } from 'level-supports';
 import { LevelDB, LevelDBIterator, } from '@switt/react-native-leveldb';
 import ModuleError from 'module-error';
 import type { NextCallback } from 'abstract-level/types/abstract-iterator';
 import { arrayBufferEqual } from './arrayBufferEqual';
-
-if (!(global as any).process) {
-  (global as any).process = {};
-}
-if (!global.process.nextTick) {
-  global.process.nextTick = (callback: (...args: any[]) => void, ...params: any[]) => {
-    if (!params.length) {
-      setImmediate(callback);
-    }
-    else {
-      setImmediate(() => {
-        callback(...params);
-      });
-    }
-  }
-}
-if (!global.process.cwd) {
-  global.process.cwd = () => {
-    return '.';
-  }
-}
-if (!(global as any).__dirname) {
-  (global as any).__dirname = '.';
-}
+import fs from 'react-native-fs';
 
 export function multiply(a: number, b: number): Promise<number> {
   return Promise.resolve(a * b);
@@ -66,7 +42,6 @@ export class SKReactNativeLevelIterator extends AbstractIterator<SKReactNativeLe
     super(db, options);
     const level = this.db._db!;
     console.log('iterator options was', options);
-
     this.it = level.newIterator();
     this.options = options;
     this.hasLimit = (options.limit != undefined) && (options.limit != -1);
@@ -139,17 +114,72 @@ export class SKReactNativeLevelIterator extends AbstractIterator<SKReactNativeLe
       // nothing?
       // self.endingSliceStorage = NULL
     }
-    // const {
-    //   keys,
-    //   values,
-    //   valueEncoding,
-    //   gt, gte,
-    //   lt, lte,
-    //   reverse, limit,
-    // } = options;
-
-    // this.it.
   }
+  async *[Symbol.asyncIterator]() {
+    console.log('abstractit called');
+    try {
+      let item
+
+      while ((item = (await this.next())) !== undefined) {
+        yield item
+      }
+    } finally {
+      if (!this.valid) await this.close()
+    }
+  }
+
+  // [Symbol.asyncIterator]() {
+  //   return {
+  //     next: async () => {
+  //       const got = await this.next();
+  //       if (!got) {
+  //         return {
+  //           done: true
+  //         } as IteratorResult<[StOrArr, StOrArr], void>;
+  //       }
+  //       return {
+  //         value: got,
+  //         done: false
+  //       } as IteratorResult<[StOrArr, StOrArr], void>
+  //     },
+  //     throw: async (e: any) => {
+  //       const ret = this.current();
+  //       this.close();
+  //       if (ret != undefined) {
+  //         return {
+  //           done: false,
+  //           value: ret
+  //         } as IteratorResult<[StOrArr, StOrArr], void>;
+  //       }
+  //       return {
+  //         done: true
+  //       } as IteratorResult<[StOrArr, StOrArr], void>
+  //     },
+  //     return: (v: any) => {
+  //       this.close();
+  //       return v;
+  //     },
+  //     [Symbol.asyncIterator]: () => {
+  //       return this[Symbol.asyncIterator]();
+  //     }
+  //   };
+  // }
+  // async *[Symbol.iterator]() {
+  //   console.log('symbolasynciterator called');
+  //   const ret = await this.next();
+  //   if (ret != undefined) yield ret;
+  //   return;
+  // }
+
+  current(): [StOrArr | undefined, StOrArr | undefined] | undefined {
+    if (this.isEnded()) {
+      return undefined;
+    }
+    let key: StOrArr | undefined = this.readsKeys ? (this.keyIsBuf ? this.it.keyBuf() : this.it.keyStr()) : undefined;
+    let val: StOrArr | undefined = this.readsValues ? (this.valueIsBuf ? this.it.valueBuf() : this.it.valueStr()) : undefined;
+    return [key, val];
+  }
+
   // An empty array signifies the natural end of the iterator
   // so simply yielding a non-empty array signifies non-end
   protected _next(callback: NextCallback<StOrArr, StOrArr>): void {
@@ -205,8 +235,8 @@ export class SKReactNativeLevelIterator extends AbstractIterator<SKReactNativeLe
       this.db.nextTick(callback, e);
     }
   }
+  // TODO: Make this work and be correct and rename it back to _next(...)
   protected _nextvnot(size: number, options: {}, callback: NodeCallback<[[StOrArr, StOrArr]]>): void {
-    console.log('nextv called');
     if (this.busy) {
       callback(new ModuleError('Iterator is busy', { code: 'LEVEL_ITERATOR_BUSY' }));
       return;
@@ -337,12 +367,15 @@ export class SKReactNativeLevel extends AbstractLevel<string, string, string> {
     }, options);
     this.location = location;
   }
-  protected _open(options: AbstractOpenOptions, callback: NodeCallback<void>): void {
+  protected async _open(options: AbstractOpenOptions, callback: NodeCallback<void>): Promise<void> {
     console.log('called with options', options);
     const {
       createIfMissing = true, errorIfExists = false
     } = options;
     try {
+      if (errorIfExists && await fs.exists(fs.DocumentDirectoryPath + `/` + this.location)) {
+        throw { message: 'File already exists' };
+      }
       this._db = new LevelDB(this.location, createIfMissing, errorIfExists);
       this.nextTick(callback, null);
     } catch (e: any) {
@@ -518,6 +551,9 @@ export class SKReactNativeLevel extends AbstractLevel<string, string, string> {
       this.nextTick(callback, e);
     }
     it.close();
+    // for (const a of this.iterator() as any as SKReactNativeLevelIterator) {
+
+    // }
   }
 }
 
