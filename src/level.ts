@@ -396,7 +396,7 @@ export class SKReactNativeLevel extends AbstractLevel<string, string, string> {
     options?: AbstractDatabaseOptions<string, string> | undefined
   ) {
     super({
-      encodings: { utf8: true },
+      encodings: { utf8: true, buffer: true },
       seek: true,
       streams: false,
       createIfMissing: true,

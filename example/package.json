@@ -1,6 +1,6 @@
 {
-  "name": "react-native-leveldb-leveldown-adapter-example",
-  "description": "Example app for react-native-leveldb-leveldown-adapter",
+  "name": "react-native-leveldb-level-adapter-example",
+  "description": "Example app for react-native-leveldb-level-adapter",
   "version": "0.0.1",
   "private": true,
   "scripts": {
