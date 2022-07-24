@@ -1,4 +1,4 @@
-# react-native-leveldb-leveldown-adapter
+# react-native-leveldb-level-adapter
 
 `abstract-level` adapter for `react-native-leveldb`
 
@@ -16,13 +16,13 @@ To run tests, start up the example app and run it. The tests are run in a useEff
 ## Installation
 
 ```sh
-npm install react-native-leveldb-leveldown-adapter
+npm install react-native-leveldb-level-adapter
 ```
 
 ## Usage
 
 ```js
-import { multiply } from "react-native-leveldb-leveldown-adapter";
+import { multiply } from "react-native-leveldb-level-adapter";
 
 // ...
 
