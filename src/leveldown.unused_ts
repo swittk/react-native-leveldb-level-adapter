@@ -264,8 +264,8 @@ export class SKReactNativeLevelDown extends ALD.AbstractLevelDOWN {
       //   createIfMissing: true,
       //   errorIfExists: true,
       // } as any
-      //supportsObj as any
-      databaseName
+      supportsObj as any
+      // databaseName
     );
     this.databaseName = databaseName;
   }
@@ -324,7 +324,7 @@ export class SKReactNativeLevelDown extends ALD.AbstractLevelDOWN {
     console.log('get with opts', options);
     if (options.asBuffer) {
       res = this._db!.getBuf(key);
-      console.log('res is', res?.byteLength);
+      console.log('res is', res?.byteLength, res?.toString());
     }
     else {
       res = this._db!.getStr(key);

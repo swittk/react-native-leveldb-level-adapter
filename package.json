@@ -1,7 +1,7 @@
 {
-  "name": "react-native-leveldb-leveldown-adapter",
+  "name": "react-native-leveldb-level-adapter",
   "version": "0.1.0-alpha3",
-  "description": "leveldown adapter for react-native-leveldb",
+  "description": "level adapter for react-native-leveldb",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/index.d.ts",
@@ -13,7 +13,7 @@
     "android",
     "ios",
     "cpp",
-    "react-native-leveldb-leveldown-adapter.podspec",
+    "react-native-leveldb-level-adapter.podspec",
     "!lib/typescript/example",
     "!android/build",
     "!ios/build",
@@ -105,13 +105,8 @@
   },
   "dependencies": {
     "@switt/react-native-leveldb": "3.0.6-alpha1",
-    "@types/abstract-leveldown": "^7.2.0",
     "abstract-level": "^1.0.3",
-    "abstract-leveldown": "^7.2.0",
     "events": "^3.3.0",
     "react-native-fs": "^2.20.0"
-  },
-  "resolutions": {
-    "level-supports": "^4.0.0"
   }
 }
