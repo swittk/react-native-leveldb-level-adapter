@@ -9,6 +9,7 @@
     "start": "react-native start"
   },
   "dependencies": {
+    "@babel/plugin-proposal-async-generator-functions": "^7.18.6",
     "@switt/react-native-leveldb": "3.0.6-alpha1",
     "buffer": "^6.0.3",
     "fast-text-encoding": "^1.0.4",

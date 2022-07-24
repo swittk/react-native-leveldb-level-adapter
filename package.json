@@ -1,6 +1,6 @@
 {
   "name": "react-native-leveldb-leveldown-adapter",
-  "version": "0.1.0",
+  "version": "0.1.0-alpha3",
   "description": "leveldown adapter for react-native-leveldb",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",

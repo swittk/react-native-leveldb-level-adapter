@@ -41,7 +41,7 @@ export class SKReactNativeLevelIterator extends AbstractIterator<SKReactNativeLe
   constructor(db: any, options: AbstractIteratorOptions<StOrArr, StOrArr>) {
     super(db, options);
     const level = this.db._db!;
-    console.log('iterator options was', options);
+    // console.log('iterator options was', options);
     this.it = level.newIterator();
     this.options = options;
     this.hasLimit = (options.limit != undefined) && (options.limit != -1);
@@ -407,7 +407,7 @@ export class SKReactNativeLevel extends AbstractLevel<string, string, string> {
     this.location = location;
   }
   protected async _open(options: AbstractOpenOptions, callback: NodeCallback<void>): Promise<void> {
-    console.log('called with options', options);
+    // console.log('called with options', options);
     const {
       createIfMissing = true, errorIfExists = false
     } = options;
@@ -547,7 +547,7 @@ export class SKReactNativeLevel extends AbstractLevel<string, string, string> {
     try {
       for (const op of operations) {
         if (op.type == 'put') {
-          console.log('put in', op.key, op.value);
+          // console.log('put in', op.key, op.value);
           this._db!.put(op.key, op.value);
           op.sublevel
         }

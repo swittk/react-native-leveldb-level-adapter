@@ -3,8 +3,8 @@
 // import ModuleError from 'module-error';
 // import type { NextCallback } from 'abstract-level/types/abstract-iterator';
 // import { arrayBufferEqual } from './arrayBufferEqual';
-export * from './level';
-// export * from './leveldown';
+export { SKReactNativeLevel } from './level';
+export { SKReactNativeLevelDown } from './leveldown';
 export const SKReactNativeLevelAdapterOptions = {
   maxSyncOperations: 100
 }

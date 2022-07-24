@@ -1,10 +1,18 @@
 # react-native-leveldb-leveldown-adapter
 
-leveldown adapter for react-native-leveldb
+`abstract-level` adapter for `react-native-leveldb`
 
-main issues in test
+Passes all 4605 tests of `abstract-level`!
+
+To run tests, start up the example app and run it. The tests are run in a useEffect hook called once at app startup.
+
+(Solved) issue in test
 - TypeError: Invalid attempt to iterate non-iterable instance. In order to be iterable, non-array objects must have a [Symbol.iterator]() method
-    - If anyone can help with this I'd be very grateful..
+    - Issue description (thanks to this comment [here](https://github.com/facebook/metro/issues/551#issuecomment-886758878) in the `facebook/metro` repository)
+    - "That error is due to an error in the @babel/plugin-transform-for-of plugin. It (mistakenly) tries to convert for await of statements with the same code as for of, and uses the wrong iterator property accessor" 
+        - Solution : if you encounter this, add "@babel/plugin-proposal-async-generator-functions" to babel.config.js of the application running the app.
+        - Note : This should already be fixed
+
 ## Installation
 
 ```sh
