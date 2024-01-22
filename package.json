@@ -104,7 +104,7 @@
     ]
   },
   "dependencies": {
-    "@switt/react-native-leveldb": "3.0.6-alpha1",
+    "react-native-leveldb": "^3.3.1",
     "abstract-level": "^1.0.3",
     "events": "^3.3.0",
     "react-native-fs": "^2.20.0"
