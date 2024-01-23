@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "react-native-leveldb-leveldown-adapter": ["./src/index"]
+      "react-native-leveldb-level-adapter": ["./src/index"]
     },
     "allowUnreachableCode": false,
     "allowUnusedLabels": false,

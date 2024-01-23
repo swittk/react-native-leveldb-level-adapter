@@ -24,5 +24,11 @@ if (!(global as any).__dirname) {
   (global as any).__dirname = '.';
 }
 if (!(global as any).Buffer) {
+  console.log('There is no global buffer')
   global.Buffer = require('buffer').Buffer;
+  (global.Buffer.constructor as any).isBuffer = global.Buffer.isBuffer;
+  // console.log('is Buffer compatible with ArrayBuffer?');
+}
+else {
+  console.log('global buffer is', global.Buffer, 'while it is equal to..?', global.Buffer == require('buffer').Buffer)
 }

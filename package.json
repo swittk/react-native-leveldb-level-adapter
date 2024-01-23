@@ -104,9 +104,10 @@
     ]
   },
   "dependencies": {
-    "react-native-leveldb": "^3.3.1",
     "abstract-level": "^1.0.3",
     "events": "^3.3.0",
-    "react-native-fs": "^2.20.0"
+    "react-native-fs": "^2.20.0",
+    "react-native-leveldb": "^3.3.1",
+    "to-arraybuffer": "^1.0.1"
   }
 }
