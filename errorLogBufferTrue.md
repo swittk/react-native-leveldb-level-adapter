@@ -1,3 +1,34 @@
+                        #######                       
+                   ################                   
+                #########     #########               
+            #########             ##########          
+        #########        ######        #########      
+       ##########################################     
+      #####      #####################       #####    
+      #####          ##############          #####    
+      #####    ###       ######       ###    #####    
+      #####    #######            #######    #####    
+      #####    ###########    ###########    #####    
+      #####    ##########################    #####    
+      #####    ##########################    #####    
+      #####      ######################     ######    
+       ######        #############        #######     
+         #########        ####       #########        
+              #########          #########            
+                  ######### #########                 
+                       #########                      
+                                                      
+                                                      
+                    Welcome to Metro!
+              Fast - Scalable - Integrated
+
+
+
+To reload the app press "r"
+To open developer menu press "d"
+
+ BUNDLE  ./index.tsx 
+
  LOG  There is no global buffer
  LOG  Running "LeveldbLeveldownAdapterExample" with {"rootTag":1,"initialProps":{}}
  LOG  removing files...
@@ -458,11 +489,11 @@
  LOG      expected: '\x00���'
  LOG      actual:   ''
  LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        strictEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115833:17
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:130502:21
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:124208:19
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:137770:27
+ LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115709:95
+ LOG        strictEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115835:17
+ LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:130504:21
+ LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:124210:19
+ LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:137766:27
  LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
  LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
  LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
@@ -796,173 +827,17 @@
  LOG  ok 669 got value 1
  LOG  ok 670 got value 2
  LOG  # empty values in batch with buffer valueEncoding
- LOG  not ok 671 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer >
- LOG      actual:   <Buffer >
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee2$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:131263:23
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
- LOG  not ok 672 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer >
- LOG      actual:   <Buffer >
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee2$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:131263:23
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
- LOG  not ok 673 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer >
- LOG      actual:   <Buffer >
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee2$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:131263:23
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 671 should be deeply equivalent
+ LOG  ok 672 should be deeply equivalent
+ LOG  ok 673 should be deeply equivalent
  LOG  # empty keys in batch with buffer keyEncoding
  LOG  ok 674 got value 0
  LOG  ok 675 got value 1
  LOG  ok 676 got value 2
  LOG  # empty values in batch with view valueEncoding
- LOG  not ok 677 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer >
- LOG      actual:   <Buffer >
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee2$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:131261:23
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
- LOG  not ok 678 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer >
- LOG      actual:   <Buffer >
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee2$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:131261:23
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
- LOG  not ok 679 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer >
- LOG      actual:   <Buffer >
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee2$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:131261:23
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 677 should be deeply equivalent
+ LOG  ok 678 should be deeply equivalent
+ LOG  ok 679 should be deeply equivalent
  LOG  # empty keys in batch with view keyEncoding
  LOG  ok 680 got value 0
  LOG  ok 681 got value 1
@@ -2404,485 +2279,43 @@
  LOG  ok 1839 no get() error
  LOG  ok 1840 should be deeply equivalent
  LOG  # test put() and get() with buffer value and buffer valueEncoding
- LOG  not ok 1841 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer 00 80 c0 ff>
- LOG      actual:   <Buffer 00 80 c0 ff>
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:134928:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 1841 should be deeply equivalent
  LOG  # test put() and get() with buffer value and buffer valueEncoding in factory
- LOG  not ok 1842 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer 00 80 c0 ff>
- LOG      actual:   <Buffer 00 80 c0 ff>
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee2$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:134962:35
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 1842 should be deeply equivalent
  LOG  # test put() and get() with buffer key and buffer keyEncoding
  LOG  ok 1843 should be deeply equivalent
  LOG  # test put() and get() with buffer key and utf8 keyEncoding
  LOG  ok 1844 should be deeply equivalent
  LOG  # test put() and get() with string value and buffer valueEncoding
- LOG  not ok 1845 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer 66 6f 6f f0 9f 90 84>
- LOG      actual:   <Buffer 66 6f 6f f0 9f 90 84>
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee5$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135068:35
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 1845 should be deeply equivalent
  LOG  ok 1846 should be deeply equivalent
  LOG  # put() as string, get() as buffer and vice versa
- LOG  not ok 1847 got buffer value
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer f0 9f 90 84>
- LOG      actual:   <Buffer f0 9f 90 84>
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee6$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135114:27
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 1847 got buffer value
  LOG  ok 1848 got string value
  LOG  # put() stringifies input to buffer
- LOG  not ok 1849 key was stringified
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer 31>
- LOG      actual:   <Buffer 31>
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee9$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135175:19
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
- LOG  not ok 1850 value was stringified
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer 32>
- LOG      actual:   <Buffer 32>
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee9$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135176:19
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 1849 key was stringified
+ LOG  ok 1850 value was stringified
  LOG  # put() as string, iterate as buffer
- LOG  not ok 1851 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: [ [ <Buffer f0 9f 90 84>, <Buffer f0 9f 90 84> ] ]
- LOG      actual:   [ [ <Buffer f0 9f 90 84>, <Buffer f0 9f 90 84> ] ]
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee10$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135211:19
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 1851 should be deeply equivalent
  LOG  # put() as buffer, iterate as string
  LOG  ok 1852 should be deeply equivalent
  LOG  # put() as view, iterate as view
- LOG  not ok 1853 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: [ [ <Buffer f0 9f 90 84>, <Buffer f0 9f 90 84> ] ]
- LOG      actual:   [ [ <Buffer f0 9f 90 84>, <Buffer f0 9f 90 84> ] ]
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee12$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135281:19
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 1853 should be deeply equivalent
  LOG  # put() as string, iterate as view
- LOG  not ok 1854 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: [ [ <Buffer f0 9f 90 84>, <Buffer f0 9f 90 84> ] ]
- LOG      actual:   [ [ <Buffer f0 9f 90 84>, <Buffer f0 9f 90 84> ] ]
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee13$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135319:19
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 1854 should be deeply equivalent
  LOG  # put() as view, iterate as string
  LOG  ok 1855 should be deeply equivalent
  LOG  # batch() with multiple puts with buffer valueEncoding per batch
- LOG  not ok 1856 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer 00 80 c0 ff>
- LOG      actual:   <Buffer 00 80 c0 ff>
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee15$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135402:36
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
- LOG  not ok 1857 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer 00 80 c0 ff>
- LOG      actual:   <Buffer 00 80 c0 ff>
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee15$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135414:36
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
- LOG  not ok 1858 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer 61 62 61 7a 76 61 6c 75 65>
- LOG      actual:   <Buffer 61 62 61 7a 76 61 6c 75 65>
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee15$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135426:36
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 1856 should be deeply equivalent
+ LOG  ok 1857 should be deeply equivalent
+ LOG  ok 1858 should be deeply equivalent
  LOG  # batch() with multiple puts with buffer valueEncoding per operation
- LOG  not ok 1859 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer 00 80 c0 ff>
- LOG      actual:   <Buffer 00 80 c0 ff>
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee16$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135475:36
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
- LOG  not ok 1860 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer 00 80 c0 ff>
- LOG      actual:   <Buffer 00 80 c0 ff>
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee16$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135487:36
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
- LOG  not ok 1861 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer 61 62 61 7a 76 61 6c 75 65>
- LOG      actual:   <Buffer 61 62 61 7a 76 61 6c 75 65>
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee16$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135499:36
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 1859 should be deeply equivalent
+ LOG  ok 1860 should be deeply equivalent
+ LOG  ok 1861 should be deeply equivalent
  LOG  # batch() with buffer encoding in factory
- LOG  not ok 1862 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer 04 05 06>
- LOG      actual:   <Buffer 04 05 06>
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee17$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135543:36
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
- LOG  not ok 1863 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer 0a 0b 0c>
- LOG      actual:   <Buffer 0a 0b 0c>
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee17$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135553:36
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 1862 should be deeply equivalent
+ LOG  ok 1863 should be deeply equivalent
  LOG  # storage is byte-aware (buffer encoding)
  LOG  ok 1864 no open error
  LOG  ok 1865 would be equal when not byte-aware
@@ -2947,33 +2380,7 @@
  LOG  ok 1906 match
  LOG  ok 1907 end of iterator
  LOG  # iterator().seek() to buffer target
- LOG  not ok 1908 match
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: [ <Buffer 74 77 6f>, '2' ]
- LOG      actual:   [ <Buffer 74 77 6f>, '2' ]
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee4$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135888:39
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 1908 match
  LOG  ok 1909 end of iterator
  LOG  # iterator().seek() to target with custom encoding
  LOG  ok 1910 match
@@ -3115,33 +2522,7 @@
  LOG  ok 2041 match
  LOG  ok 2042 end of iterator
  LOG  # keys().seek() to buffer target
- LOG  not ok 2043 match
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer 74 77 6f>
- LOG      actual:   <Buffer 74 77 6f>
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee4$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135888:39
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 2043 match
  LOG  ok 2044 end of iterator
  LOG  # keys().seek() to target with custom encoding
  LOG  ok 2045 match
@@ -3505,29 +2886,7 @@
  LOG  ok 2380 has entries
  LOG  ok 2381 no clear error
  LOG  ok 2382 no all() error
- LOG  not ok 2383 has no entries
- LOG    ---
- LOG      operator: equal
- LOG      expected: 0
- LOG      actual:   2
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        strictEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115833:17
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:136617:23
- LOG        [native code]
- LOG        value@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128295:13
- LOG        value@[native code]
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 2383 has no entries
  LOG  ok 2384 no close error
  LOG  # test simple clear() on non-utf8 buffer keys, with promise
  LOG  ok 2385 no open error
@@ -3536,29 +2895,7 @@
  LOG  ok 2388 has entries
  LOG  ok 2389 no clear error
  LOG  ok 2390 no all() error
- LOG  not ok 2391 has no entries
- LOG    ---
- LOG      operator: equal
- LOG      expected: 0
- LOG      actual:   2
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        strictEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115833:17
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:136649:23
- LOG        [native code]
- LOG        value@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128295:13
- LOG        value@[native code]
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 2391 has no entries
  LOG  ok 2392 no close error
  LOG  # clear() with utf8 encoding (deferred: false)
  LOG  ok 2393 got expected keys
@@ -4359,12 +3696,12 @@
  LOG      expected: '\x00���'
  LOG      actual:   ''
  LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        strictEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115833:17
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:130502:21
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:124208:19
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:124208:19
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:137770:27
+ LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115709:95
+ LOG        strictEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115835:17
+ LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:130504:21
+ LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:124210:19
+ LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:124210:19
+ LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:137766:27
  LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
  LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
  LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
@@ -4698,173 +4035,17 @@
  LOG  ok 3362 got value 1
  LOG  ok 3363 got value 2
  LOG  # empty values in batch with buffer valueEncoding
- LOG  not ok 3364 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer >
- LOG      actual:   <Buffer >
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee2$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:131263:23
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
- LOG  not ok 3365 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer >
- LOG      actual:   <Buffer >
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee2$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:131263:23
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
- LOG  not ok 3366 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer >
- LOG      actual:   <Buffer >
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee2$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:131263:23
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 3364 should be deeply equivalent
+ LOG  ok 3365 should be deeply equivalent
+ LOG  ok 3366 should be deeply equivalent
  LOG  # empty keys in batch with buffer keyEncoding
  LOG  ok 3367 got value 0
  LOG  ok 3368 got value 1
  LOG  ok 3369 got value 2
  LOG  # empty values in batch with view valueEncoding
- LOG  not ok 3370 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer >
- LOG      actual:   <Buffer >
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee2$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:131261:23
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
- LOG  not ok 3371 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer >
- LOG      actual:   <Buffer >
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee2$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:131261:23
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
- LOG  not ok 3372 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer >
- LOG      actual:   <Buffer >
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee2$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:131261:23
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 3370 should be deeply equivalent
+ LOG  ok 3371 should be deeply equivalent
+ LOG  ok 3372 should be deeply equivalent
  LOG  # empty keys in batch with view keyEncoding
  LOG  ok 3373 got value 0
  LOG  ok 3374 got value 1
@@ -6306,485 +5487,43 @@
  LOG  ok 4532 no get() error
  LOG  ok 4533 should be deeply equivalent
  LOG  # test put() and get() with buffer value and buffer valueEncoding
- LOG  not ok 4534 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer 00 80 c0 ff>
- LOG      actual:   <Buffer 00 80 c0 ff>
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:134928:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 4534 should be deeply equivalent
  LOG  # test put() and get() with buffer value and buffer valueEncoding in factory
- LOG  not ok 4535 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer 00 80 c0 ff>
- LOG      actual:   <Buffer 00 80 c0 ff>
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee2$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:134962:35
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 4535 should be deeply equivalent
  LOG  # test put() and get() with buffer key and buffer keyEncoding
  LOG  ok 4536 should be deeply equivalent
  LOG  # test put() and get() with buffer key and utf8 keyEncoding
  LOG  ok 4537 should be deeply equivalent
  LOG  # test put() and get() with string value and buffer valueEncoding
- LOG  not ok 4538 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer 66 6f 6f f0 9f 90 84>
- LOG      actual:   <Buffer 66 6f 6f f0 9f 90 84>
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee5$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135068:35
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 4538 should be deeply equivalent
  LOG  ok 4539 should be deeply equivalent
  LOG  # put() as string, get() as buffer and vice versa
- LOG  not ok 4540 got buffer value
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer f0 9f 90 84>
- LOG      actual:   <Buffer f0 9f 90 84>
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee6$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135114:27
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 4540 got buffer value
  LOG  ok 4541 got string value
  LOG  # put() stringifies input to buffer
- LOG  not ok 4542 key was stringified
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer 31>
- LOG      actual:   <Buffer 31>
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee9$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135175:19
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
- LOG  not ok 4543 value was stringified
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer 32>
- LOG      actual:   <Buffer 32>
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee9$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135176:19
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 4542 key was stringified
+ LOG  ok 4543 value was stringified
  LOG  # put() as string, iterate as buffer
- LOG  not ok 4544 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: [ [ <Buffer f0 9f 90 84>, <Buffer f0 9f 90 84> ] ]
- LOG      actual:   [ [ <Buffer f0 9f 90 84>, <Buffer f0 9f 90 84> ] ]
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee10$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135211:19
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 4544 should be deeply equivalent
  LOG  # put() as buffer, iterate as string
  LOG  ok 4545 should be deeply equivalent
  LOG  # put() as view, iterate as view
- LOG  not ok 4546 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: [ [ <Buffer f0 9f 90 84>, <Buffer f0 9f 90 84> ] ]
- LOG      actual:   [ [ <Buffer f0 9f 90 84>, <Buffer f0 9f 90 84> ] ]
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee12$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135281:19
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 4546 should be deeply equivalent
  LOG  # put() as string, iterate as view
- LOG  not ok 4547 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: [ [ <Buffer f0 9f 90 84>, <Buffer f0 9f 90 84> ] ]
- LOG      actual:   [ [ <Buffer f0 9f 90 84>, <Buffer f0 9f 90 84> ] ]
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee13$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135319:19
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 4547 should be deeply equivalent
  LOG  # put() as view, iterate as string
  LOG  ok 4548 should be deeply equivalent
  LOG  # batch() with multiple puts with buffer valueEncoding per batch
- LOG  not ok 4549 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer 00 80 c0 ff>
- LOG      actual:   <Buffer 00 80 c0 ff>
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee15$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135402:36
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
- LOG  not ok 4550 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer 00 80 c0 ff>
- LOG      actual:   <Buffer 00 80 c0 ff>
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee15$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135414:36
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
- LOG  not ok 4551 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer 61 62 61 7a 76 61 6c 75 65>
- LOG      actual:   <Buffer 61 62 61 7a 76 61 6c 75 65>
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee15$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135426:36
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 4549 should be deeply equivalent
+ LOG  ok 4550 should be deeply equivalent
+ LOG  ok 4551 should be deeply equivalent
  LOG  # batch() with multiple puts with buffer valueEncoding per operation
- LOG  not ok 4552 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer 00 80 c0 ff>
- LOG      actual:   <Buffer 00 80 c0 ff>
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee16$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135475:36
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
- LOG  not ok 4553 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer 00 80 c0 ff>
- LOG      actual:   <Buffer 00 80 c0 ff>
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee16$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135487:36
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
- LOG  not ok 4554 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer 61 62 61 7a 76 61 6c 75 65>
- LOG      actual:   <Buffer 61 62 61 7a 76 61 6c 75 65>
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee16$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135499:36
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 4552 should be deeply equivalent
+ LOG  ok 4553 should be deeply equivalent
+ LOG  ok 4554 should be deeply equivalent
  LOG  # batch() with buffer encoding in factory
- LOG  not ok 4555 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer 04 05 06>
- LOG      actual:   <Buffer 04 05 06>
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee17$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135543:36
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
- LOG  not ok 4556 should be deeply equivalent
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer 0a 0b 0c>
- LOG      actual:   <Buffer 0a 0b 0c>
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee17$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135553:36
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 4555 should be deeply equivalent
+ LOG  ok 4556 should be deeply equivalent
  LOG  # storage is byte-aware (buffer encoding)
  LOG  ok 4557 no open error
  LOG  ok 4558 would be equal when not byte-aware
@@ -6849,33 +5588,7 @@
  LOG  ok 4599 match
  LOG  ok 4600 end of iterator
  LOG  # iterator().seek() to buffer target
- LOG  not ok 4601 match
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: [ <Buffer 74 77 6f>, '2' ]
- LOG      actual:   [ <Buffer 74 77 6f>, '2' ]
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee4$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135888:39
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 4601 match
  LOG  ok 4602 end of iterator
  LOG  # iterator().seek() to target with custom encoding
  LOG  ok 4603 match
@@ -7017,33 +5730,7 @@
  LOG  ok 4734 match
  LOG  ok 4735 end of iterator
  LOG  # keys().seek() to buffer target
- LOG  not ok 4736 match
- LOG    ---
- LOG      operator: deepEqual
- LOG      expected: <Buffer 74 77 6f>
- LOG      actual:   <Buffer 74 77 6f>
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        tapeDeepEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115897:17
- LOG        _callee4$@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:135888:39
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128757:34
- LOG        tryCatch@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128777:23
- LOG        invoke@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128815:30
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128821:19
- LOG        tryCallOne@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28469:16
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:28570:27
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 4736 match
  LOG  ok 4737 end of iterator
  LOG  # keys().seek() to target with custom encoding
  LOG  ok 4738 match
@@ -7407,29 +6094,7 @@
  LOG  ok 5073 has entries
  LOG  ok 5074 no clear error
  LOG  ok 5075 no all() error
- LOG  not ok 5076 has no entries
- LOG    ---
- LOG      operator: equal
- LOG      expected: 0
- LOG      actual:   2
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        strictEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115833:17
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:136617:23
- LOG        [native code]
- LOG        value@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128295:13
- LOG        value@[native code]
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 5076 has no entries
  LOG  ok 5077 no close error
  LOG  # test simple clear() on non-utf8 buffer keys, with promise
  LOG  ok 5078 no open error
@@ -7438,29 +6103,7 @@
  LOG  ok 5081 has entries
  LOG  ok 5082 no clear error
  LOG  ok 5083 no all() error
- LOG  not ok 5084 has no entries
- LOG    ---
- LOG      operator: equal
- LOG      expected: 0
- LOG      actual:   2
- LOG      stack: |-
- LOG        assert@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115707:95
- LOG        strictEqual@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:115833:17
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:136649:23
- LOG        [native code]
- LOG        value@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:128295:13
- LOG        value@[native code]
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29742:26
- LOG        _callTimer@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29642:17
- LOG        _callReactNativeMicrotasksPass@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29677:17
- LOG        callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:29885:44
- LOG        __callReactNativeMicrotasks@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3068:46
- LOG        http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2846:45
- LOG        __guard@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:3051:15
- LOG        flushedQueue@http://localhost:8081/index.bundle?platform=ios&dev=true&minify=false&modulesOnly=false&runModule=true&app=com.example.reactnativeleveldbleveldownadapter:2845:21
- LOG        flushedQueue@[native code]
- LOG        invokeCallbackAndReturnFlushedQueue@[native code]
- LOG    ...
+ LOG  ok 5084 has no entries
  LOG  ok 5085 no close error
  LOG  # clear() with utf8 encoding (deferred: false)
  LOG  ok 5086 got expected keys
@@ -7827,7 +6470,7 @@
  LOG  
  LOG  1..5397
  LOG  # tests 5397
- LOG  # pass  5341
- LOG  # fail  56
+ LOG  # pass  5395
+ LOG  # fail  2
  LOG  
 

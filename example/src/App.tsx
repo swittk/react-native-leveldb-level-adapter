@@ -10,16 +10,20 @@ export default function App() {
 
   React.useEffect(() => {
     (async () => {
-      // console.log('buffy', a, 'ctor', a.constructor, a.constructor.isBuffer, a.constructor.isBuffer(a))
-      // console.log('buffy stuff', typeof a, typeof a.length, typeof a.copy, typeof a.slice)
-      // console.log('Buf stuff', Buffer, 'ctor', Buffer.constructor, 'isBuf', Buffer.constructor?.isBuffer)
-      // testLevelDown();
-      // console.log('creating db')
-      const ldb = new SKReactNativeLevel('test', { keyEncoding: 'utf8', valueEncoding: 'buffer' });
-      const kv = ['foo', Buffer.from('0080c0ff', 'hex')]
-      console.log('putting kv', kv)
-      ldb.put(kv[0], kv[1]);
-      console.log('got', await ldb.get(kv[0]))
+      testLevelDown();
+      // const ldb = new SKReactNativeLevel('test');
+      // {
+      //   const kv = ['foo', Buffer.from('0080c0ff', 'hex')]
+      //   console.log('putting kv', kv)
+      //   ldb.put(kv[0], kv[1]);
+      //   console.log('got', await ldb.get(kv[0]))
+      // }
+      // const ldb = new SKReactNativeLevel('test');
+      // await ldb.open();
+      // console.log('created db')
+      // await ldb.put("hello", "world");
+      // // console.log('put hello');
+      // console.log('got hello', await ldb.get("hello"));
       // console.log('opening db')
       // await ldb.open();
       // console.log('created db')

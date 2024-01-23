@@ -5,6 +5,7 @@ import type { NextCallback } from 'abstract-level/types/abstract-iterator';
 import { arrayBufferEqual } from './arrayBufferEqual';
 import fs from 'react-native-fs';
 const toArrayBuffer = require('to-arraybuffer');
+import { Buffer } from 'buffer';
 
 export function multiply(a: number, b: number): Promise<number> {
   return Promise.resolve(a * b);
@@ -63,26 +64,24 @@ export class SKReactNativeLevelIterator extends AbstractIterator<SKReactNativeLe
     // gte has higher priority than gt, and lte has higher priority than lt!
     // so we just check them later that's all
     if (options.gt != undefined) {
-      lowerBound = this.keyIsBuf ? sanitizeBuffer(options.gt as ArrayBuffer) : options.gt;
+      lowerBound = sanitizeBuffer(options.gt);
       lowerBoundIsOpen = false;
     }
     if (options.gte != undefined) {
-      lowerBound = this.keyIsBuf ? sanitizeBuffer(options.gte as ArrayBuffer) : options.gte;
+      lowerBound = sanitizeBuffer(options.gte);
       lowerBoundIsOpen = true;
     }
     if (options.lt != undefined) {
-      upperBound = this.keyIsBuf ? sanitizeBuffer(options.lt as ArrayBuffer) : options.lt;
+      upperBound = sanitizeBuffer(options.lt);
       upperBoundIsOpen = false;
     }
     if (options.lte != undefined) {
-      upperBound = this.keyIsBuf ? sanitizeBuffer(options.lte as ArrayBuffer) : options.lte;
+      upperBound = sanitizeBuffer(options.lte);
       upperBoundIsOpen = true;
     }
     // }
     let startingBound = options.reverse ? upperBound : lowerBound;
-    if (this.keyIsBuf) {
-      startingBound = sanitizeBuffer(startingBound as ArrayBuffer);
-    }
+    startingBound = sanitizeBuffer(startingBound);
     if (startingBound != undefined) {
       this.startingBoundIsOpen = this.isReversed ? upperBoundIsOpen : lowerBoundIsOpen;
       this.it.seek(startingBound);
@@ -274,7 +273,7 @@ export class SKReactNativeLevelIterator extends AbstractIterator<SKReactNativeLe
     if (!this.valid) {
       return;
     }
-    if (options.keyEncoding == 'buffer') { target = sanitizeBuffer(target as ArrayBuffer); }
+    target = sanitizeBuffer(target as ArrayBuffer);
 
     // Reference : https://github.com/andymatuschak/react-native-leveldown/blob/e7d14cfdf81558d15ecec76e956269081d12a40b/ios/RNLeveldown.mm#L388
     this.it.seek(target);
@@ -464,7 +463,7 @@ export class SKReactNativeLevel extends AbstractLevel<string, StOrArr, StOrArr> 
   ): void {
     let res: ArrayBuffer | string | null;
 
-    key = options.keyEncoding == 'buffer' ? sanitizeBuffer(key as ArrayBuffer) : key;
+    key = sanitizeBuffer(key);
     // For abstract-level, the valueEncoding is how we check (read https://github.com/Level/abstract-level/blob/main/UPGRADING.md#100)
     if (options.valueEncoding == 'buffer') {
       res = this._db!.getBuf(key);
@@ -498,7 +497,7 @@ export class SKReactNativeLevel extends AbstractLevel<string, StOrArr, StOrArr> 
     try {
       if (options.valueEncoding == 'buffer') {
         const values = keys.map((k) => {
-          k = options.keyEncoding == 'buffer' ? sanitizeBuffer(k as ArrayBuffer) : k;
+          k = sanitizeBuffer(k);
           const res = this._db!.getBuf(k);
           if (res == null) {
             return undefined;
@@ -509,7 +508,7 @@ export class SKReactNativeLevel extends AbstractLevel<string, StOrArr, StOrArr> 
       }
       else {
         const values = keys.map((k) => {
-          k = options.keyEncoding == 'buffer' ? sanitizeBuffer(k as ArrayBuffer) : k;
+          k = sanitizeBuffer(k);
           const res = this._db!.getStr(k);
           if (res == null) {
             return undefined;
@@ -530,8 +529,8 @@ export class SKReactNativeLevel extends AbstractLevel<string, StOrArr, StOrArr> 
     callback: NodeCallback<void>
   ): void {
     try {
-      key = options.keyEncoding == 'buffer' ? sanitizeBuffer(key as ArrayBuffer) : key;
-      value = options.valueEncoding == 'buffer' ? sanitizeBuffer(value as ArrayBuffer) : value;
+      key = sanitizeBuffer(key);
+      value = sanitizeBuffer(value);
       this._db!.put(key, value);
       this.nextTick(callback, null);
     } catch (e) {
@@ -544,7 +543,7 @@ export class SKReactNativeLevel extends AbstractLevel<string, StOrArr, StOrArr> 
     callback: NodeCallback<void>
   ): void {
     try {
-      key = options.keyEncoding == 'buffer' ? sanitizeBuffer(key as ArrayBuffer) : key;
+      key = sanitizeBuffer(key);
       this._db!.delete(key);
       this.nextTick(callback, null);
     } catch (e) {
@@ -561,16 +560,16 @@ export class SKReactNativeLevel extends AbstractLevel<string, StOrArr, StOrArr> 
     try {
       for (const op of operations) {
         if (op.type == 'put') {
-          const key = op.keyEncoding == 'buffer' ? sanitizeBuffer(op.key as ArrayBuffer) : op.key;
-          const value = op.valueEncoding == 'buffer' ? sanitizeBuffer(op.value as ArrayBuffer) : op.value;
-          // console.log('put in', op.key, op.value);
+          const key = sanitizeBuffer(op.key as ArrayBuffer);
+          const value = sanitizeBuffer(op.value as ArrayBuffer);
           this._db!.put(key, value);
           // op.sublevel
         }
         else {
-          this._db!.delete(op.keyEncoding == 'buffer' ? sanitizeBuffer(op.key as ArrayBuffer) : op.key);
+          this._db!.delete(sanitizeBuffer(op.key as ArrayBuffer));
         }
-        // TODO: What to do with sublevels?
+        // What to do with sublevels? >> Seems it's automatically handled by abstract-level;
+        // op.sublevel is just here for potential optimizations I think
         // op.sublevel?.batch();
       }
       this.nextTick(callback, null);
@@ -588,7 +587,9 @@ export class SKReactNativeLevel extends AbstractLevel<string, StOrArr, StOrArr> 
   // Hopefully can do this better later with native implementaion?
   protected async _clear(options: AbstractClearOptions<StOrArr>, callback: NodeCallback<void>) {
     // Since the native code has no clear() we just use our own iterator to get stuff then..
-    const it = this.iterator({ ...options, values: false }); //new SKReactNativeLevelIterator(this, { ...options, values: false });
+    // Haxx : use keyEncoding : 'buffer' to make sure any type of key will get parsed correctly.
+    // (strings will be invalid empty strings if you use keyEncoding `string` on non-UTF buffer keys)
+    const it = this.iterator({ ...options, keyEncoding: 'buffer', values: false }); //new SKReactNativeLevelIterator(this, { ...options, values: false });
     try {
       const keys: StOrArr[] = [];
       while (true) {
@@ -599,16 +600,14 @@ export class SKReactNativeLevel extends AbstractLevel<string, StOrArr, StOrArr> 
         keys.push(kv[0]);
       }
       for (const k of keys) {
-        this._db!.delete(options.keyEncoding == 'buffer' ? sanitizeBuffer(k as ArrayBuffer) : k);
+        const toDel = sanitizeBuffer(k as ArrayBuffer);
+        this._db!.delete(toDel);
       }
       this.nextTick(callback, null);
     } catch (e) {
       this.nextTick(callback, e);
     }
     it.close();
-    // for (const a of this.iterator() as any as SKReactNativeLevelIterator) {
-
-    // }
   }
 }
 
@@ -691,8 +690,13 @@ export function arraybufCompare(a: ArrayBuffer, b: ArrayBuffer): number {
     return -1;
   }
 }
-function sanitizeBuffer(buf: ArrayBuffer | Buffer | undefined) {
-  if (buf == undefined) {
+/**
+ * Sanitizes buffer inputs to `ArrayBuffer` type for `react-native-leveldb` (it only uses ArrayBuffers)
+ * @param buf 
+ * @returns 
+ */
+function sanitizeBuffer(buf: ArrayBuffer | Buffer | string | null | undefined) {
+  if (buf == undefined || buf == null) {
     return buf;
   }
   if (typeof buf == 'string') {
@@ -701,5 +705,7 @@ function sanitizeBuffer(buf: ArrayBuffer | Buffer | undefined) {
   if (buf instanceof ArrayBuffer) {
     return buf;
   }
+  // to-arraybuffer has 2 code paths; if Buffer is instanceof Uint8Array; then it uses the fast path
+  // This is the case for React Native here, so there's no performance impact.
   return toArrayBuffer(buf);
 }
